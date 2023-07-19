@@ -1,0 +1,154 @@
+:root{
+    --bg-primary: #ffffff;
+    --bg-secondary: #e8f5e9;
+
+    --clr-accent: #e6ba95;
+    --clr-primary: #fafdd6;
+
+    --clr-btn: #a2b38b;
+
+    --clr-cell: #fafdd6;
+    --clr-hover: #c4e396;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    background-image: linear-gradient(315deg, rgba(189, 195, 199, 0) 60.00%,rgb(251, 255, 203) 100.00%),url("https://c.pxhere.com/images/88/94/045e3545262652f0d4f817baa22e-1594714.jpg!d");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    padding: 1rem 0;
+    text-transform: uppercase;
+    background-color: var(--clr-accent);
+    text-align: center;
+    box-shadow: 3px 3px 10px #000;
+}
+
+.bi-box-seam{
+    margin-right: 1rem;
+}  
+
+.openCatalog{
+    all: unset;
+    background-color: #e6ba95;
+    height: 2rem;
+    padding: .5rem 2rem;
+    font-size: 16px;
+    margin-left: 4rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.openCatalog:active{
+    transform: translate(3px, 3px);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 100px;
+}
+
+.catalog, .container{
+    max-width: 100%;
+}
+
+.catalog table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-accent);
+    height: max-content;
+    padding: 2rem;
+    font-weight: 600;
+    width: 100%;
+    justify-self: center;
+    margin-top: 10px;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px #000;
+    position: sticky;
+    top: 1rem;
+}
+
+.container input{
+    background-color: var(--clr-primary);
+    border: none;
+    height: 2.5rem;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 0 1rem;
+    font-size: 13px;
+}
+
+.container button{
+    background-color: var(--clr-btn);
+    border: none;
+    height: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 8rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 13px;
+}
+
+.container h3 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
+    color: #fafdd6;
+}
+
+.container button:hover{
+    background-color: var(--clr-hover);
+}
+
+.container button:active{
+    transform: translate(1px, 2px);
+    box-shadow: none;
+}
+
+table,th,td {
+    border-collapse: separate;
+    border-spacing: 8px;
+    text-align: center;
+}
+
+th,td {
+    padding: 5px;
+    box-shadow: 2px 2px 2px #00000079;
+}
+
+th{
+    background-color: var(--clr-accent);
+    font-size: 16px;
+}
+
+td{
+    background-color: var(--clr-cell);
+    font-size: 14px;
+}
+
+tr:hover td{
+    background-color: var(--clr-hover);
+}
